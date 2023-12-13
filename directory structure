@@ -8,14 +8,15 @@
 - controllers
 
 - authController.js      // Authentication controller
-- airbnbController.js    // Airbnb controller
-- RentinController.js    // Rentin Controller
+- videoRoutes.js    // videoRoutes controller
+-
 
 - routes
 
-- airbnbRoutes.js        // Airbnb routes
+- videoRoutes.js        // videoRoutes routes
 - authRoutes.js         // Authentication routes
-- RentinRoutes.js      // Rentin Routes
+- postsRoutes
+
  
 - .env                 // Environment variables 
 - package.json
