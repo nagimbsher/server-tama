@@ -25,6 +25,7 @@ exports.getVideo = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 exports.deleteVideo = async (req, res) => {
   const videoId = req.params.id; 
 
@@ -63,3 +64,5 @@ exports.addVideo = async (req, res) => {
     res.status(500).send('Server error');
   }
 };
+=======
+>>>>>>> 8da15362de3b5fefc9861ad0e5a7f814bddf5625
