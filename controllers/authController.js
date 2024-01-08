@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 8da15362de3b5fefc9861ad0e5a7f814bddf5625
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const pool = require('../config/dbConfig'); 
@@ -50,7 +47,7 @@ exports.loginUser = async (req, res) => {
 };
 
 
-<<<<<<< HEAD
+
 
 
 // const pool = require('../config/dbConfig');
@@ -79,5 +76,4 @@ exports.loginUser = async (req, res) => {
 //       res.status(400).json({ message: err.message });
 //   }
 // });
-=======
->>>>>>> 8da15362de3b5fefc9861ad0e5a7f814bddf5625
+
