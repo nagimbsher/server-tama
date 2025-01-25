@@ -1,15 +1,13 @@
 require('dotenv').config();
 const { Pool } = require('pg');
 
-// Use the connection string from the .env file
 const pool = new Pool({
   connectionString: process.env.DB_CONNECTION_STRING,
-  ssl: {
-    rejectUnauthorized: false, // This is needed for cloud databases with SSL
-  },
+  ssl: false, // Disable SSL
 });
 
 module.exports = pool;
+
 
 
 
