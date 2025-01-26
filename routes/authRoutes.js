@@ -8,11 +8,6 @@ router.post('/register', authController.registerUser);
 // Route for logging in a user
 router.post('/login', authController.loginUser);
 
-// Route for Forgot Password
-router.post('/forgot-password', authController.forgotPassword);
-
-// Route for Reset Password
-router.post('/reset-password', authController.resetPassword);
 
 // Optional GET route for testing purposes (or you can remove it if unnecessary)
 router.get('/register', (req, res) => {

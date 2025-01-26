@@ -13,20 +13,3 @@ const pool = new Pool({
 });
 
 module.exports = pool;
-
-
-
-
-
-
-
-
-// require('dotenv').config();
-// const { Pool } = require('pg');
-
-// const pool = new Pool({
-//   connectionString: process.env.DB_CONNECTION_STRING,
-//   ssl: false, // Disable SSL
-// });
-
-// module.exports = pool;

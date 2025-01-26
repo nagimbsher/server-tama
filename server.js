@@ -10,12 +10,12 @@ app.use(express.json());
 // Importing Routes
 const videoRoutes = require('./routes/videoRoutes'); 
 const authRoutes = require('./routes/authRoutes');
-const postsRoutes = require('./routes/postsRoutes');
+
 
 // Using Routes
 app.use('/api/videos', videoRoutes); 
 app.use('/auth', authRoutes);
-app.use('/api/posts', postsRoutes);
+
 
 // Starting Server
 app.listen(port, () => {
