@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3001;
+
 
 // Middlewares
 app.use(cors());
@@ -18,10 +18,9 @@ app.use('/auth', authRoutes);
 
 
 // Starting Server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(process.env.PORT || 3001, () => {
+  console.log(`Server listening on ${process.env.PORT || 3001}`);
 });
-
 
 
 
