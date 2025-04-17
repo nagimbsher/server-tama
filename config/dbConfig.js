@@ -9,7 +9,6 @@
 //   port: process.env.DB_PORT,
 // });
 
-
 const { Pool } = require('pg');
 require('dotenv').config();
 
@@ -19,7 +18,7 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASS,
   port: process.env.DB_PORT,
-  ssl: { rejectUnauthorized: false }, // required for Supabase
+  ssl: { rejectUnauthorized: false }, // important for Supabase on Render
 });
 
 module.exports = pool;
