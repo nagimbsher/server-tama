@@ -3,6 +3,9 @@ const cors = require('cors');
 const app = express();
 const pool = require('./config/dbConfig'); 
 
+//Load environment variables
+require('dotenv').config();
+
 // Middlewares
 app.use(cors());
 app.use(express.json());
