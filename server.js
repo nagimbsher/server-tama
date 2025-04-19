@@ -1,11 +1,13 @@
-require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const bodyParser = require('body-parser');
+require('dotenv').config();
 const pool = require('./config/dbConfig'); 
 
 
-
+const PORT = process.env.PORT || 3001;
 // Middlewares
 app.use(cors());
 app.use(express.json());
@@ -30,12 +32,9 @@ app.get('/test-db', async (req, res) => {
 });
 
 
-// Starting Server
-const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
-
 
 
 // const express = require('express');
